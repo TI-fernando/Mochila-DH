@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+    display: flex; /* layout flexível */
+    flex-direction: row; /* Orientação */
+    justify-content: space-around;  /* Justificação */
+    position: fixed;
+    width: 100%;
+    background-color: #140839;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #982A98;
+}
+
+.container .main-container {
+    background: url('https://i.pinimg.com/originals/59/69/84/59698460a33a71e42ddf46e185e17737.gif') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+}
+
+.container .main-container h1 {
+    font-size: 100px;
+}
+.container .main-container p {
+    font-size: 30px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #e65d0e;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 0px 43px 0px #e65d0e;
+}
+
+
+.container .prices-container {
+    background-color: #140839;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.container .prices-container .prices-item {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    border: 7px #980D8A solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.container .prices-container .prices-item p:nth-child(1) {
+    font-size: 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #982A98;
+    color: white;
+    font-size: 15px;
+}

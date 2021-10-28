@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    align-items: center;
+    background-color:purple;
+    color:black;
+    font-weight: bold;
+
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-weight: bolder;
+}
+
+.title {
+    color:aquamarine;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media(max-width: 350px){
+    header {
+        flex-direction: column;
+        padding: 25px;
+    }
+}
+

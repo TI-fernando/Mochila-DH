@@ -1,0 +1,111 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+/* Container pai  */
+
+.main-container {
+    background-color: rgb(94, 94, 240);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    position: static;
+    z-index: 2;
+    border: solid 3px black;
+    
+}
+
+.campo-pesquisa input ,label{
+    font-size: 14px;
+    margin-bottom: 100px;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+
+.main-container h1{
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.main-container ul, li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    list-style: none;
+
+}
+
+a {
+    font-size: 14px;
+    font-weight: bolder;
+    color: purple;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* Caixa container pai */
+
+.caixa {
+    background-color:aqua;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    background-color: purple;
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    border: solid 2px black;
+    margin-top: 20px auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    border: solid 2px black;
+    font-weight: bold;
+}
+
+@media(max-width: 350px){
+    .main-container, label, input, a, h1{
+        flex-direction: row;
+    }
+
+}
+
+
