@@ -4,48 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Curriculo</title>
+    <title>Curriculo Responsivo Com HTML e CSS</title>
 </head>
 <body>
-
-    <div class="container-one">
-
-        <div>
-            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--pcSkTMZL--/c_limit,f_auto,fl_progressive,q_80,w_190/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png" alt="">
-
-        </div>
-
-        <div class="contato">
-
-        <h2>Contato</h2>
-
-        <p>Rua Tal</p>
-        <p>fernando@gmail.com</p>
-        <p>www.fernando.com</p>
-        <p>sitebacana</p>
-        <p>(64) 00000-0000</p>
-
-        <h3>Habilidades</h3>
-
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-
-        <div>
-
-    </div>
-
-    <div class="container-two">
-
-        <div class="info">
-            <p>teste
-            </p>
-
-        </div>
-        
-
-    </div>
     
+    <div class="container">
+
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="imagens/img.jpeg" alt="">
+                </div>
+                <h2>Fernando Henrique Silva <br> <span> Desenvolvedor FullStack</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Contatos</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">(64) 99246-8631</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">fernandoagro.654@gmail.com</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.mywebsite.com.br</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">fernandohenrique654</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Ipameri, Goias, Brasil</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactInfo education">
+                <h3 class="title">Formações</h3>
+                <ul>
+
+                    <li>
+                        <h5>2021 - 2022</h5>
+                        <h4>Dev FullStack</h4>
+                        <h4>Digital House</h4>
+                    </li>
+
+                    <li>
+                        <h5>2019 - 2022</h5>
+                        <h4>Tecnologia da Informação</h4>
+                        <h4>Instituto Federal Goiano</h4>
+                    </li>
+
+                    <li>
+                        <h5>2018 - 2018</h5>
+                        <h4>Tecnico em Informatica</h4>
+                        <h4>Instituto Federal Goiano</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactInfo language">
+                <h3 class="title">Idiomas</h3>
+                <ul>
+                   <li>
+                       <span class="text">English</span>
+                       <span class="percent">
+                           <div style="width: 50%;"></div>
+                       </span>
+                   </li>
+
+                   <li>
+                        <span class="text">Espanhol</span>
+                        <span class="percent">
+                            <div style="width: 30%;"></div>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="text">Portugues</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right_Side">
+            <div class="about">
+                <h2 class="title2">Perfil</h2>
+                <p>Culpa in commodo veniam laborum dolore culpa. Ut irure culpa veniam dolore dolore sit sit ipsum ex ea. Tempor ex incididunt veniam id sunt consectetur sit ut est ad magna sunt ea. Irure reprehenderit est voluptate ea ex.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, nesciunt. Dolorem ipsa reprehenderit eum nobis cum explicabo veniam quia eos aut inventore, ipsam corporis obcaecati molestiae repellat excepturi culpa cupiditate!</p>
+                <br>
+                Culpa in commodo veniam laborum dolore culpa. Ut irure culpa veniam dolore dolore sit sit ipsum ex ea. Tempor ex incididunt veniam id sunt consectetur sit ut est ad magna sunt ea. Irure reprehenderit est voluptate ea ex.</p>
+            </div>
+
+            <div class="about">
+                <h2 class="title2">Experiencias</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - Presente</h5>
+                        <h5>Nome Da Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Dev Junior</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt beatae animi quo culpa.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - Presente</h5>
+                        <h5>Nome Da Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Dev Junior</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt beatae animi quo culpa.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - Presente</h5>
+                        <h5>Nome Da Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Dev Junior</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt beatae animi quo culpa.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="about skills">
+                <h2 class="title2">Conhecimento</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>JavaScript</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>GIT</h4>
+                    <div class="percent">
+                        <div style="width: 35%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>ALGORITIMOS</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>EXPRESS</h4>
+                    <div class="percent">
+                        <div style="width: 20%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="about interest">
+                <h2 class="title2">Interesses</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i> Games</li>
+                    <li><i class="fa fa-music" aria-hidden="true"></i> Musicas</li>
+                    <li><i class="fa fa-plane" aria-hidden="true"></i> Viajar</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i> Ler</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
