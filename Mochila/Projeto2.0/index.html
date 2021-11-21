@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bad1afd692.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto 2.0</title>
+</head>
+<body>
+
+        <header>
+            <a href="#" class="logo"> <img src="images/logo.png"> </a>
+            <ul class="navigation">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Shows</a> </li>
+                <li> <a href="#">Eventos</a> </li>
+                <li> <a href="#">Ingressos</a> </li>
+                <li> <a href="#">Login</a> </li>
+                <li> <a href="#">Contatos</a> </li>
+            </ul>
+
+            <div class="searchBox">
+                <input class="search-txt" type="text" name="" placeholder="Buscar...">
+                <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+            </div>
+
+        </header>
+
+
+    <main>
+        <div class="container">
+
+        <div class="card">
+            <span></span>
+            <div class="imgBx"><img src="images/img1.jpg" alt=""></div>
+            <div class="content">
+                <div>
+                    <h2>Pearl Jam</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi in quos dolore nemo officiis qui saepe consectetur tenetur
+                    quidem quae quod atque accusantium quas earum, modi provident?
+                    Dolores, recusandae blanditiis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+            <div class="imgBx"><img src="images/img2.jpg" alt=""></div>
+            <div class="conttent">
+                <div>
+                    <h2>Pearl Jam</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi in quos dolore nemo officiis qui saepe consectetur tenetur
+                    quidem quae quod atque accusantium quas earum, modi provident?
+                    Dolores, recusandae blanditiis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+            <div class="imgBx"><img src="images/img3.jpg" alt=""></div>
+            <div class="conttent">
+                <div>
+                    <h2>Pearl Jam</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi in quos dolore nemo officiis qui saepe consectetur tenetur
+                    quidem quae quod atque accusantium quas earum, modi provident?
+                    Dolores, recusandae blanditiis.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.card').on('mouseenter', function(e){
+                x = e.pageX - $(this).offset().left,
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x})
+            })
+
+            $('.card').on('mouseout', function(e){
+                x = e.pageX - $(this).offset().left,
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x})
+            })
+        })
+    </script>
+</body>
+</html>
